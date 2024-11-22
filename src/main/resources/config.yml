@@ -1,0 +1,32 @@
+senderConfig:
+  clientId: "efe55e54-0fb8-4456-b33f-7c9f19f078d9"
+  clientSecret: "ZXttsl6ERHYIXZ18L0Xi95lVamby4-VdQj98NGqGwr8"
+
+
+# OAuth-credentials for a subscriber
+subscriberConfig:
+  clientId: "efe55e54-0fb8-4456-b33f-7c9f19f078d9"
+  clientSecret: "ZXttsl6ERHYIXZ18L0Xi95lVamby4-VdQj98NGqGwr8"
+
+  # Path that references the private decryption key file
+  privateDecryptionKeyPaths: ["C:/Users/chemnitz/fit-connect/config/decryption_key.json"]
+
+  # Path that references the signing key file that signs SET-Events
+  privateSigningKeyPath: "C:/Users/chemnitz/fit-connect/config/signing_key.json"
+
+# Name of the used environment (from environments config below).
+# In this case the options are prod | testing
+activeEnvironment: TEST
+
+#####################################################################
+# OPTIONAL SETTINGS                                                 #
+#                                                                   #
+# Can be used if needed by uncommenting the shown properties        #
+#####################################################################
+
+# Proxy config for http api calls - routes all calls to FIT-Connect
+# REST-endpoints through the proxy if needed in your current infrastructure
+
+# httpProxyHost: "https//:proxy.your-service.domain"
+# httpProxyPort: 8080
+# requestTimeoutInSeconds: 30
